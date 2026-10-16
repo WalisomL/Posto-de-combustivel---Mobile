@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#0B1120" android:layout_height="match_parent" android:layout_width="match_parent" android:orientation="vertical" android:padding="24dp" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView android:layout_height="wrap_content" android:layout_marginBottom="48dp" android:layout_marginTop="24dp" android:layout_width="match_parent" android:text="DECISÃO INTELIGENTE" android:textAlignment="center" android:textColor="#F8FAFC" android:textSize="24sp" android:textStyle="bold"/>
+
+    <EditText android:backgroundTint="#334155" android:hint="Preço do Etanol (R$)" android:id="@+id/etPrecoEtanol" android:inputType="numberDecimal" android:layout_height="60dp" android:layout_marginBottom="24dp" android:layout_width="match_parent" android:textColor="#F8FAFC" android:textColorHint="#94A3B8"/>
+
+    <EditText android:backgroundTint="#334155" android:hint="Preço da Gasolina (R$)" android:id="@+id/etPrecoGasolina" android:inputType="numberDecimal" android:layout_height="60dp" android:layout_marginBottom="48dp" android:layout_width="match_parent" android:textColor="#F8FAFC" android:textColorHint="#94A3B8"/>
+
+    <Button android:backgroundTint="#3B82F6" android:id="@+id/btnCalcular" android:layout_height="60dp" android:layout_marginBottom="32dp" android:layout_width="match_parent" android:text="VERIFICAR VANTAGEM" android:textColor="#FFFFFF" android:textStyle="bold"/>
+
+    <TextView android:id="@+id/txtResultado" android:layout_height="wrap_content" android:layout_width="match_parent" android:layout_marginBottom="32dp" android:layout_weight="1" android:textAlignment="center" android:textColor="#10B981" android:textSize="22sp" android:textStyle="bold"/>
+
+    <!-- Botão Voltar -->
+    <Button android:backgroundTint="#334155" android:id="@+id/btnVoltar" android:layout_height="60dp" android:layout_marginBottom="16dp" android:layout_width="match_parent" android:text="VOLTAR AO MENU" android:textColor="#94A3B8" android:textStyle="bold"/>
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="#0B1120" android:fillViewport="true" android:layout_height="match_parent" android:layout_width="match_parent" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical" android:padding="24dp">
+
+        <TextView android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:layout_width="wrap_content" android:text="NOVO REGISTRO" android:textColor="#F8FAFC" android:textSize="24sp" android:textStyle="bold"/>
+
+        <EditText android:backgroundTint="#334155" android:clickable="true" android:drawableEnd="@android:drawable/ic_menu_today" android:focusable="false" android:hint="Data do Abastecimento" android:id="@+id/etData" android:layout_height="60dp" android:layout_marginBottom="16dp" android:layout_width="match_parent" android:textColor="#F8FAFC" android:textColorHint="#94A3B8"/>
+
+        <EditText android:backgroundTint="#334155" android:hint="Hodômetro Atual (km)" android:id="@+id/etOdo" android:inputType="numberDecimal" android:layout_height="60dp" android:layout_marginBottom="16dp" android:layout_width="match_parent" android:textColor="#F8FAFC" android:textColorHint="#94A3B8"/>
+
+        <LinearLayout android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_width="match_parent" android:orientation="horizontal">
+
+            <EditText android:backgroundTint="#334155" android:hint="Litros" android:id="@+id/etLitros" android:inputType="numberDecimal" android:layout_height="60dp" android:layout_marginEnd="8dp" android:layout_weight="1" android:layout_width="0dp" android:textColor="#F8FAFC" android:textColorHint="#94A3B8"/>
+
+            <EditText android:backgroundTint="#334155" android:hint="Valor P/ Litro (R$)" android:id="@+id/etValor" android:inputType="numberDecimal" android:layout_height="60dp" android:layout_marginStart="8dp" android:layout_weight="1" android:layout_width="0dp" android:textColor="#F8FAFC" android:textColorHint="#94A3B8"/>
+        </LinearLayout>
+
+        <TextView android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_width="wrap_content" android:text="Tipo de Combustível:" android:textColor="#94A3B8"/>
+
+        <RadioGroup android:id="@+id/rgCombustivel" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:layout_width="match_parent" android:orientation="horizontal">
+            <RadioButton android:buttonTint="#10B981" android:id="@+id/rbGasolina" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Gasolina" android:textColor="#F8FAFC"/>
+            <RadioButton android:buttonTint="#10B981" android:id="@+id/rbEtanol" android:layout_height="wrap_content" android:layout_marginHorizontal="16dp" android:layout_width="wrap_content" android:text="Etanol" android:textColor="#F8FAFC"/>
+            <RadioButton android:buttonTint="#10B981" android:id="@+id/rbDiesel" android:layout_height="wrap_content" android:layout_width="wrap_content" android:text="Diesel" android:textColor="#F8FAFC"/>
+        </RadioGroup>
+
+        <Button android:backgroundTint="#10B981" android:id="@+id/btnSalvar" android:layout_height="60dp" android:layout_marginBottom="24dp" android:layout_width="match_parent" android:text="REGISTRAR E ANALISAR" android:textColor="#FFFFFF" android:textStyle="bold"/>
+
+        <!-- Card de Análise Oculto Inicialmente -->
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAnalise"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="#1E293B"
+            app:cardCornerRadius="16dp"
+            android:layout_marginBottom="24dp"
+            android:visibility="gone">
+
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="match_parent" android:orientation="vertical" android:padding="20dp">
+
+                <TextView android:layout_height="wrap_content" android:layout_marginBottom="16dp" android:layout_width="match_parent" android:text="RELATÓRIO DE CONSUMO" android:textAlignment="center" android:textColor="#38BDF8" android:textStyle="bold"/>
+
+                <TextView android:id="@+id/txtConsumoMedio" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_width="match_parent" android:textColor="#F8FAFC" android:textSize="16sp"/>
+                <TextView android:id="@+id/txtCustoKm" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:layout_width="match_parent" android:textColor="#F8FAFC" android:textSize="16sp"/>
+                <TextView android:id="@+id/txtMediaDia" android:layout_height="wrap_content" android:layout_width="match_parent" android:textColor="#F8FAFC" android:textSize="16sp"/>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Botão Voltar -->
+        <Button android:backgroundTint="#334155" android:id="@+id/btnVoltar" android:layout_height="60dp" android:layout_marginBottom="24dp" android:layout_width="match_parent" android:text="VOLTAR AO MENU" android:textColor="#94A3B8" android:textStyle="bold"/>
+
+    </LinearLayout>
+</ScrollView>
